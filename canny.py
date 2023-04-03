@@ -62,7 +62,8 @@ def convolve(mat, filtermask):
     radius, length = int(filtermask.shape[0] / 2), filtermask.shape[0]
 
     # initialize result
-    res = np.zeros(mat.shape)
+    res = np.empty(mat.shape)
+    res[:] = np.nan
 
     # perform convolutions
     for i in range(rows - length + 1):
@@ -106,7 +107,8 @@ def gradient_operation(image):
     rows, cols = mat1.shape[0], mat1.shape[1]
 
     #initialize result
-    magnitudes = np.zeros((rows, cols))
+    magnitudes = np.empty((rows, cols))
+    magnitudes[:] = np.nan
 
     #compute edge magnitudes
     for i in range(rows):
@@ -196,6 +198,9 @@ def non_maxima_suppression(gradient_magnitude, gradient_directions):
 
     print(f"Mean: {np.mean(suppressed)}")
 
+    # set undefined values to 0
+    suppressed[np.isnan(suppressed)] = 0
+
     return suppressed, supp_percentiles
 
 def simple_threshold(image, thresholds):
@@ -224,5 +229,3 @@ def simple_threshold(image, thresholds):
                 seventy_edges[i, j] = 1
     
     return [twenty_edges, fifty_edges, seventy_edges]
-    
-

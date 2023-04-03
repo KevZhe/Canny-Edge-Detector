@@ -62,6 +62,9 @@ def main():
     #read image from testimages directory
     image = np.array(Image.open("testimages/" + filename).convert('L'))
 
+    # Show image dimensions
+    print(f"Image dimensions: {image.shape}")
+
     #create new directory in output for storing results
     newpath = 'output/' + filename[:-4] 
     if not os.path.exists(newpath):
@@ -81,6 +84,9 @@ def main():
     image_suppressed, thresholds = non_maxima_suppression(gradient_magnitude, gradient_directions)
     suppressed = Image.fromarray((image_suppressed*255).astype(np.uint8))
     suppressed.save(newpath + "/nmssuppressed.bmp")
+
+    # Show suppressed image dimensions
+    print(f"Suppressed image dimensions: {image_suppressed.shape}")
 
     # Perform simple thresholding
     image_edges = simple_threshold(image_suppressed, thresholds)
