@@ -1,6 +1,8 @@
-import argparse
-import sys
 from canny import *
+import argparse
+import matplotlib.pyplot as plt
+import numpy as np
+from PIL import Image
 import os
 
 #parser for image input
