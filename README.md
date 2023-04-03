@@ -36,9 +36,6 @@ Original Image:
 
 ![Barbara.bmp](testimages/Barbara.bmp)
 
-Histogram:
-
-![Histogram for Barbara.bmp](output/Barbara/histogram.png)
 
 Gaussian-Smoothed:
 
@@ -52,15 +49,19 @@ Suppressed:
 
 ![Barbara.bmp suppressed](output/Barbara/nmssuppressed.bmp)
 
-Threshold25:
+Histogram:
+
+![Histogram for Barbara.bmp](output/Barbara/histogram.png)
+
+Threshold25 (`t = 2.846`):
 
 ![Barbara.bmp thresholded at 25th percentile](output/Barbara/threshold25.bmp)
 
-Threshold50:
+Threshold50 (`t = 6.438`):
 
 ![Barbara.bmp thresholded at 50th percentile](output/Barbara/threshold50.bmp)
 
-Threshold75:
+Threshold75 (`t = 14.014`):
 
 ![Barbara.bmp thresholded at 75th percentile](output/Barbara/threshold75.bmp)
 
@@ -69,10 +70,6 @@ Threshold75:
 Original Image:
 
 ![Goldhill.bmp](testimages/Goldhill.bmp)
-
-Histogram:
-
-![Histogram for Goldhill.bmp](output/Goldhill/histogram.png)
 
 Gaussian-Smoothed:
 
@@ -86,15 +83,19 @@ Suppressed:
 
 ![Goldhill.bmp suppressed](output/Goldhill/nmssuppressed.bmp)
 
-Threshold25:
+Histogram:
+
+![Histogram for Goldhill.bmp](output/Goldhill/histogram.png)
+
+Threshold25 (`t = 3.549`):
 
 ![Goldhill.bmp thresholded at 25th percentile](output/Goldhill/threshold25.bmp)
 
-Threshold50:
+Threshold50 (`t = 7.068`):
 
 ![Goldhill.bmp thresholded at 50th percentile](output/Goldhill/threshold50.bmp)
 
-Threshold75:
+Threshold75 (`t = 13.898`):
 
 ![Goldhill.bmp thresholded at 75th percentile](output/Goldhill/threshold75.bmp)
 
@@ -104,10 +105,6 @@ Threshold75:
 Original Image:
 
 ![Peppers.bmp](testimages/Peppers.bmp)
-
-Histogram:
-
-![Histogram for Peppers.bmp](output/Peppers/histogram.png)
 
 Gaussian-Smoothed:
 
@@ -121,15 +118,19 @@ Suppressed:
 
 ![Peppers.bmp suppressed](output/Peppers/nmssuppressed.bmp)
 
-Threshold25:
+Histogram:
+
+![Histogram for Peppers.bmp](output/Peppers/histogram.png)
+
+Threshold25 (`t = 1.654`):
 
 ![Peppers.bmp thresholded at 25th percentile](output/Peppers/threshold25.bmp)
 
-Threshold50:
+Threshold50 (`t = 3.434`):
 
 ![Peppers.bmp thresholded at 50th percentile](output/Peppers/threshold50.bmp)
 
-Threshold75:
+Threshold75 (`t = 9.657`):
 
 ![Peppers.bmp thresholded at 75th percentile](output/Peppers/threshold75.bmp)
 
