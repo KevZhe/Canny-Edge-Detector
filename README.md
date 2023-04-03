@@ -33,81 +33,81 @@ Note that the input image files are stored in the `testimages/` directory.
 ## `Barbara.bmp`
 
 Original Image:
-![Barbara.bmp](testimages\Barbara.bmp)
+![Barbara.bmp](testimages/Barbara.bmp)
 
 Histogram:
-![Histogram for Barbara.bmp](output\Barbara\histogram.png)
+![Histogram for Barbara.bmp](output/Barbara/histogram.png)
 
 Gaussian-Smoothed:
-![Barbara.bmp smoothed](output\Barbara\guassian_smooth.bmp)
+![Barbara.bmp smoothed](output/Barbara/guassian_smooth.bmp)
 
 Magnitude:
-![Barbara.bmp magnitude](output\Barbara\magnitude.bmp)
+![Barbara.bmp magnitude](output/Barbara/magnitude.bmp)
 
 Suppressed:
-![Barbara.bmp suppressed](output\Barbara\nmssuppressed.bmp)
+![Barbara.bmp suppressed](output/Barbara/nmssuppressed.bmp)
 
 Threshold25:
-![Barbara.bmp thresholded at 25th percentile](output\Barbara\threshold25.bmp)
+![Barbara.bmp thresholded at 25th percentile](output/Barbara/threshold25.bmp)
 
 Threshold50:
-![Barbara.bmp thresholded at 50th percentile](output\Barbara\threshold50.bmp)
+![Barbara.bmp thresholded at 50th percentile](output/Barbara/threshold50.bmp)
 
 Threshold75:
-![Barbara.bmp thresholded at 75th percentile](output\Barbara\threshold75.bmp)
+![Barbara.bmp thresholded at 75th percentile](output/Barbara/threshold75.bmp)
 
 ## `Goldhill.bmp`
 
 Original Image:
-![Goldhill.bmp](testimages\Goldhill.bmp)
+![Goldhill.bmp](testimages/Goldhill.bmp)
 
 Histogram:
-![Histogram for Goldhill.bmp](output\Goldhill\histogram.png)
+![Histogram for Goldhill.bmp](output/Goldhill/histogram.png)
 
 Gaussian-Smoothed:
-![Goldhill.bmp smoothed](output\Goldhill\guassian_smooth.bmp)
+![Goldhill.bmp smoothed](output/Goldhill/guassian_smooth.bmp)
 
 Magnitude:
-![Goldhill.bmp magnitude](output\Goldhill\magnitude.bmp)
+![Goldhill.bmp magnitude](output/Goldhill/magnitude.bmp)
 
 Suppressed:
-![Goldhill.bmp suppressed](output\Goldhill\nmssuppressed.bmp)
+![Goldhill.bmp suppressed](output/Goldhill/nmssuppressed.bmp)
 
 Threshold25:
-![Goldhill.bmp thresholded at 25th percentile](output\Goldhill\threshold25.bmp)
+![Goldhill.bmp thresholded at 25th percentile](output/Goldhill/threshold25.bmp)
 
 Threshold50:
-![Goldhill.bmp thresholded at 50th percentile](output\Goldhill\threshold50.bmp)
+![Goldhill.bmp thresholded at 50th percentile](output/Goldhill/threshold50.bmp)
 
 Threshold75:
-![Goldhill.bmp thresholded at 75th percentile](output\Goldhill\threshold75.bmp)
+![Goldhill.bmp thresholded at 75th percentile](output/Goldhill/threshold75.bmp)
 
 
 ## `Peppers.bmp`
 
 Original Image:
-![Peppers.bmp](testimages\Peppers.bmp)
+![Peppers.bmp](testimages/Peppers.bmp)
 
 Histogram:
-![Histogram for Peppers.bmp](output\Peppers\histogram.png)
+![Histogram for Peppers.bmp](output/Peppers/histogram.png)
 
 Gaussian-Smoothed:
-![Peppers.bmp smoothed](output\Peppers\guassian_smooth.bmp)
+![Peppers.bmp smoothed](output/Peppers/guassian_smooth.bmp)
 
 Magnitude:
-![Peppers.bmp magnitude](output\Peppers\magnitude.bmp)
+![Peppers.bmp magnitude](output/Peppers/magnitude.bmp)
 
 Suppressed:
-![Peppers.bmp suppressed](output\Peppers\nmssuppressed.bmp)
+![Peppers.bmp suppressed](output/Peppers/nmssuppressed.bmp)
 
 Threshold25:
-![Peppers.bmp thresholded at 25th percentile](output\Peppers\threshold25.bmp)
+![Peppers.bmp thresholded at 25th percentile](output/Peppers/threshold25.bmp)
 
 Threshold50:
-![Peppers.bmp thresholded at 50th percentile](output\Peppers\threshold50.bmp)
+![Peppers.bmp thresholded at 50th percentile](output/Peppers/threshold50.bmp)
 
 Threshold75:
-![Peppers.bmp thresholded at 75th percentile](output\Peppers\threshold75.bmp)
+![Peppers.bmp thresholded at 75th percentile](output/Peppers/threshold75.bmp)
 
 # Source Code
 
