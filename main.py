@@ -84,7 +84,7 @@ def main():
 
     # Perform non-maxima suppression
     image_suppressed, thresholds = non_maxima_suppression(gradient_magnitude, gradient_directions)
-    suppressed = Image.fromarray((image_suppressed*255).astype(np.uint8))
+    suppressed = Image.fromarray((image_suppressed).astype(np.uint8))
     suppressed.save(newpath + "/nmssuppressed.bmp")
 
     # Show suppressed image dimensions
@@ -95,11 +95,11 @@ def main():
     i1, i2, i3 = image_edges[0], image_edges[1], image_edges[2]
 
     #save images from various levels of thresholding
-    image1 = Image.fromarray((i1*255).astype(np.uint8))
+    image1 = Image.fromarray((i1).astype(np.uint8))
     image1.save(newpath + "/threshold25.bmp")
-    image2 = Image.fromarray((i2*255).astype(np.uint8))
+    image2 = Image.fromarray((i2).astype(np.uint8))
     image2.save(newpath + "/threshold50.bmp")
-    image3 = Image.fromarray((i3*255).astype(np.uint8))
+    image3 = Image.fromarray((i3).astype(np.uint8))
     image3.save(newpath + "/threshold75.bmp")
 
     visualize(image, image_edges, image_suppressed, newpath)
