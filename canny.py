@@ -35,12 +35,6 @@ ONE_HUNDRED_THIRTY_FIVE_DEGREES = np.array([
     [1, 0, -1],
     [0, -1, -2]
 ])
-"""
-TODO:
-FIX CONVOLUTIONS TO HAVE SAME DIMENSIONS, UNDEFINED VALUES SHOULD BE SET TO 0
-did it but now it has a border around image? ask kevin
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-"""
 
 # Functions
 def convolve(mat, filtermask):
