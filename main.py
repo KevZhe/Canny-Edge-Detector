@@ -79,7 +79,7 @@ def main():
 
     # Compute gradient magnitudes and directions
     gradient_magnitude, gradient_directions = gradient_operation(image_smooth)
-    magnitude = Image.fromarray((gradient_magnitude*255).astype(np.uint8))
+    magnitude = Image.fromarray((gradient_magnitude).astype(np.uint8))
     magnitude.save(newpath + "/magnitude.bmp")
 
     # Perform non-maxima suppression
