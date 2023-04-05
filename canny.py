@@ -220,10 +220,10 @@ def simple_threshold(image, thresholds):
     for i in range(image.shape[0]):
         for j in range(image.shape[1]):
             if image[i, j] >= thresholds[0]:
-                twenty_edges[i, j] = image[i,j]
+                twenty_edges[i, j] = 1
             if image[i, j] >= thresholds[1]:
-                fifty_edges[i, j] = image[i,j]
+                fifty_edges[i, j] = 1
             if image[i, j] >= thresholds[2]:
-                seventy_edges[i, j] = image[i,j]
+                seventy_edges[i, j] = 1
     
     return [twenty_edges, fifty_edges, seventy_edges]
