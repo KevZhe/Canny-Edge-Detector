@@ -501,7 +501,7 @@ def main():
 
     # Perform non-maxima suppression
     image_suppressed, thresholds = non_maxima_suppression(gradient_magnitude, gradient_directions)
-    suppressed = Image.fromarray((image_suppressed*255).astype(np.uint8))
+    suppressed = Image.fromarray((image_suppressed).astype(np.uint8))
     suppressed.save(newpath + "/nmssuppressed.bmp")
 
     # Show suppressed image dimensions
