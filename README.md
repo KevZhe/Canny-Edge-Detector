@@ -27,6 +27,7 @@ Example:
 
 Note that the input image files are stored in the `testimages/` directory.
 
+<div style="page-break-after: always;"></div>
 
 # Results
 
@@ -36,34 +37,49 @@ Original Image:
 
 ![Barbara.bmp](testimages/Barbara.bmp)
 
+<div style="page-break-after: always;"></div>
 
 Gaussian-Smoothed:
 
 ![Barbara.bmp smoothed](output/Barbara/guassian_smooth.bmp)
 
+<div style="page-break-after: always;"></div>
+
 Magnitude:
 
 ![Barbara.bmp magnitude](output/Barbara/magnitude.bmp)
+
+<div style="page-break-after: always;"></div>
 
 Suppressed:
 
 ![Barbara.bmp suppressed](output/Barbara/nmssuppressed.bmp)
 
+<div style="page-break-after: always;"></div>
+
 Histogram:
 
 ![Histogram for Barbara.bmp](output/Barbara/histogram.png)
+
+<div style="page-break-after: always;"></div>
 
 Threshold25 (`t = 2.846`):
 
 ![Barbara.bmp thresholded at 25th percentile](output/Barbara/threshold25.bmp)
 
+<div style="page-break-after: always;"></div>
+
 Threshold50 (`t = 6.438`):
 
 ![Barbara.bmp thresholded at 50th percentile](output/Barbara/threshold50.bmp)
 
+<div style="page-break-after: always;"></div>
+
 Threshold75 (`t = 14.014`):
 
 ![Barbara.bmp thresholded at 75th percentile](output/Barbara/threshold75.bmp)
+
+<div style="page-break-after: always;"></div>
 
 ## `Goldhill.bmp`
 
@@ -71,33 +87,49 @@ Original Image:
 
 ![Goldhill.bmp](testimages/Goldhill.bmp)
 
+<div style="page-break-after: always;"></div>
+
 Gaussian-Smoothed:
 
 ![Goldhill.bmp smoothed](output/Goldhill/guassian_smooth.bmp)
+
+<div style="page-break-after: always;"></div>
 
 Magnitude:
 
 ![Goldhill.bmp magnitude](output/Goldhill/magnitude.bmp)
 
+<div style="page-break-after: always;"></div>
+
 Suppressed:
 
 ![Goldhill.bmp suppressed](output/Goldhill/nmssuppressed.bmp)
+
+<div style="page-break-after: always;"></div>
 
 Histogram:
 
 ![Histogram for Goldhill.bmp](output/Goldhill/histogram.png)
 
+<div style="page-break-after: always;"></div>
+
 Threshold25 (`t = 3.549`):
 
 ![Goldhill.bmp thresholded at 25th percentile](output/Goldhill/threshold25.bmp)
+
+<div style="page-break-after: always;"></div>
 
 Threshold50 (`t = 7.068`):
 
 ![Goldhill.bmp thresholded at 50th percentile](output/Goldhill/threshold50.bmp)
 
+<div style="page-break-after: always;"></div>
+
 Threshold75 (`t = 13.898`):
 
 ![Goldhill.bmp thresholded at 75th percentile](output/Goldhill/threshold75.bmp)
+
+<div style="page-break-after: always;"></div>
 
 
 ## `Peppers.bmp`
@@ -106,33 +138,49 @@ Original Image:
 
 ![Peppers.bmp](testimages/Peppers.bmp)
 
+<div style="page-break-after: always;"></div>
+
 Gaussian-Smoothed:
 
 ![Peppers.bmp smoothed](output/Peppers/guassian_smooth.bmp)
+
+<div style="page-break-after: always;"></div>
 
 Magnitude:
 
 ![Peppers.bmp magnitude](output/Peppers/magnitude.bmp)
 
+<div style="page-break-after: always;"></div>
+
 Suppressed:
 
 ![Peppers.bmp suppressed](output/Peppers/nmssuppressed.bmp)
+
+<div style="page-break-after: always;"></div>
 
 Histogram:
 
 ![Histogram for Peppers.bmp](output/Peppers/histogram.png)
 
+<div style="page-break-after: always;"></div>
+
 Threshold25 (`t = 1.654`):
 
 ![Peppers.bmp thresholded at 25th percentile](output/Peppers/threshold25.bmp)
+
+<div style="page-break-after: always;"></div>
 
 Threshold50 (`t = 3.434`):
 
 ![Peppers.bmp thresholded at 50th percentile](output/Peppers/threshold50.bmp)
 
+<div style="page-break-after: always;"></div>
+
 Threshold75 (`t = 9.657`):
 
 ![Peppers.bmp thresholded at 75th percentile](output/Peppers/threshold75.bmp)
+
+<div style="page-break-after: always;"></div>
 
 # Source Code
 
@@ -354,14 +402,16 @@ def simple_threshold(image, thresholds):
     for i in range(image.shape[0]):
         for j in range(image.shape[1]):
             if image[i, j] >= thresholds[0]:
-                twenty_edges[i, j] = 1
+                twenty_edges[i, j] = 255
             if image[i, j] >= thresholds[1]:
-                fifty_edges[i, j] = 1
+                fifty_edges[i, j] = 255
             if image[i, j] >= thresholds[2]:
-                seventy_edges[i, j] = 1
+                seventy_edges[i, j] = 255
     
     return [twenty_edges, fifty_edges, seventy_edges]
 ```
+
+<div style="page-break-after: always;"></div>
 
 `main.py`
 ```
